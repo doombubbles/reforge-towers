@@ -3,6 +3,7 @@ using System.Reflection;
 using HarmonyLib;
 using Il2CppAssets.Scripts.Models;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Simulation;
 using Il2CppAssets.Scripts.Simulation.Towers;
 using Il2CppAssets.Scripts.Simulation.Towers.Behaviors;
@@ -10,11 +11,11 @@ using Il2CppAssets.Scripts.Unity.UI_New.InGame.TowerSelectionMenu;
 
 namespace ReforgeTowers;
 
-[HarmonyPatch(typeof(RateSupport.RateSupportMutator), nameof(RateSupport.RateSupportMutator.Mutate))]
+[HarmonyPatch(typeof(RateSupportModel.RateSupportMutator), nameof(RateSupportModel.RateSupportMutator.Mutate))]
 internal static class RateMutator_Mutate
 {
     [HarmonyPrefix]
-    private static bool Prefix(RateSupport.RateSupportMutator __instance, Model model, ref bool __result)
+    private static bool Prefix(RateSupportModel.RateSupportMutator __instance, Model model, ref bool __result)
     {
         if (__instance.id != nameof(ReforgeTowersMod)) return true;
 

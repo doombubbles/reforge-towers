@@ -8,6 +8,7 @@ using BTD_Mod_Helper.Api.ModOptions;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Models.Profile;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Simulation.Towers;
 using Il2CppAssets.Scripts.Simulation.Towers.Behaviors;
 using Il2CppAssets.Scripts.Unity.UI_New.InGame;
@@ -73,7 +74,7 @@ public class ReforgeTowersMod : BloonsTD6Mod
         var icon = ModContent.GetInstance<HammerBuffIcon>();
 
         tower.RemoveMutatorsById(nameof(ReforgeTowersMod));
-        tower.AddMutator(new RateSupport.RateSupportMutator(true, nameof(ReforgeTowersMod),
+        tower.AddMutator(new RateSupportModel.RateSupportMutator(true, nameof(ReforgeTowersMod),
             reforge.ReforgeId, 0, new BuffIndicatorModel("BuffIndicatorModel", icon.BuffLocsName, icon.BuffIconName)));
     }
 
