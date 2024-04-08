@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Simulation.Towers;
-using Il2CppAssets.Scripts.Simulation.Towers.Behaviors;
 
 namespace ReforgeTowers;
 

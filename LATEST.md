@@ -1,1 +1,2 @@
-- Fixed for BTD6 v37.0
+- Fixed for BTD6 v42.0
+- Reforging now always costs at least $5 

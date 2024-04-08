@@ -10,10 +10,9 @@ using Il2CppAssets.Scripts.Models.GenericBehaviors;
 using Il2CppAssets.Scripts.Models.Profile;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors;
 using Il2CppAssets.Scripts.Simulation.Towers;
-using Il2CppAssets.Scripts.Simulation.Towers.Behaviors;
 using Il2CppAssets.Scripts.Unity.UI_New.InGame;
 using Il2CppAssets.Scripts.Unity.Utils;
-using Il2CppAssets.Scripts.Utils;
+using Il2CppNinjaKiwi.Common.ResourceUtils;
 using MelonLoader;
 using ReforgeTowers;
 [assembly: MelonInfo(typeof(ReforgeTowersMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
@@ -67,7 +66,7 @@ public class ReforgeTowersMod : BloonsTD6Mod
         description = "Cost for reforging, as a percentage of the Tower's overall worth."
     };
 
-    public static int GetReforgeCost(Tower tower) => 5 * (int) Math.Round(ReforgeCost * tower.worth / 500f);
+    public static int GetReforgeCost(Tower tower) => 5 + 5 * (int) Math.Round(ReforgeCost * tower.worth / 500f);
 
     public static void SetTowerReforge(Tower tower, ModReforge reforge)
     {
