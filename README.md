@@ -1,9 +1,12 @@
+<h1 align="center">
 <a href="https://github.com/doombubbles/reforge-towers/releases/latest/download/ReforgeTowers.dll">
     <img align="left" alt="Icon" height="90" src="Icon.png">
     <img align="right" alt="Download" height="75" src="https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/BloonsTD6%20Mod%20Helper/Resources/DownloadBtn.png">
 </a>
 
-<h1 align="center">Reforge Towers</h1>
+Reforge Towers
+
+</h1>
 
 **Lets you reforge towers in a similar way to how you can reforge items in Terraria.**
 

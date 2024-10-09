@@ -2,8 +2,8 @@ namespace ReforgeTowers;
 
 public static class ModHelperData
 {
-    public const string WorksOnVersion = "42.0";
-    public const string Version = "1.0.3";
+    public const string WorksOnVersion = "45.0";
+    public const string Version = "1.0.4";
     public const string Name = "Reforge Towers";
 
     public const string Description =
