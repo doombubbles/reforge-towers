@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed for BTD6 v56
+
 ## [1.0.8] - 2026-04-24
 
 - Fixed for BTD6 v54

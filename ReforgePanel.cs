@@ -60,7 +60,7 @@ public class ReforgePanel(IntPtr ptr) : MonoBehaviour(ptr)
             {
                 nameText = result.GetComponentInChildren<NK_TextMeshProUGUI>();
                 nameText.enableAutoSizing = true;
-                text = InGame.Bridge.GetNamedMonkeyName(InGame.Bridge.MyPlayerNumber, tower.namedMonkeyKey);
+                text = InGame.Bridge.GetNamedMonkeyName(InGame.Bridge.GetInputId(), tower.namedMonkeyKey);
             }
 
             if (nameText == null)
